@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>ColombianDevs</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    
+    <div class="login">
+      <div class="form-container">
+        <img class="logo" src="./assets/Logo.svg" />
+        <h1 class="title">ColombianDevs Drones</h1>
+        <p class="subtitle">
+          bienvenido a colombiadevs a continuación te presentamos un catálogo de drones en colaboración de camper aeronáutica
+
+        </p>
+        
+        <model-viewer 
+        bounds="tight" 
+        enable-pan src="./assets/dron1.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        shadow-intensity="0.97" 
+        shadow-softness="0.8" 
+        exposure="0.65"
+        background-color
+        preload
+        reveal-when-loaded
+        disable-zoom
+        camera-orbit="calc(40rad * env(window-scroll-y)) 90deg"
+        environment-image="neutral" 
+        camera-orbit="370.3deg 77.64deg auto"></model-viewer>
+
+        <model-viewer 
+        bounds="tight" 
+        enable-pan src="./assets/dron2.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        shadow-intensity="0.97" 
+        shadow-softness="0.8" 
+        exposure="0.65" 
+        background-color
+        preload
+        reveal-when-loaded
+        disable-zoom
+        camera-orbit="calc(40rad * env(window-scroll-y)) 90deg"
+        environment-image="neutral" 
+        camera-orbit="370.3deg 77.64deg auto"></model-viewer>
+
+        <model-viewer 
+        bounds="tight" 
+        enable-pan src="./assets/dron4.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        shadow-intensity="0.97" 
+        shadow-softness="0.8" 
+        exposure="0.65" 
+        background-color
+        preload
+        reveal-when-loaded
+        disable-zoom
+        camera-orbit="calc(40rad * env(window-scroll-y)) 90deg"
+        environment-image="neutral"></model-viewer>
+
+        <model-viewer 
+        bounds="tight" 
+        enable-pan src="./assets/dron3.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        shadow-intensity="0.97" 
+        shadow-softness="0.8" 
+        exposure="0.65" 
+        background-color
+        preload
+        reveal-when-loaded
+        disable-zoom
+        camera-orbit="calc(40rad * env(window-scroll-y)) 90deg"
+        environment-image="neutral" ></model-viewer>
+
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>
